@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX com fetch</title>
+</head>
+<body>
+  <h1>Carregando Dados com fetch()</h1>
+  <button onclick="carregarDados()">Carregar</button>
+  <div id="conteudo"></div>
+
+  <script>
+    function carregarDados() {
+      fetch('dados.txt')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('conteudo').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Erro ao carregar:', error);
+        });
+    }
+  </script>
+</body>
+</html>

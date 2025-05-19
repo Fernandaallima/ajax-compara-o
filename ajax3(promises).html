@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX com Promises</title>
+</head>
+<body>
+  <h1>Carregando Dados com Promises</h1>
+  <button onclick="carregarDados()">Carregar</button>
+  <div id="conteudo"></div>
+
+  <script>
+    function carregarArquivo(url) {
+      return new Promise(function (resolve, reject) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.onload = () => xhr.status === 200 ? resolve(xhr.responseText) : reject(xhr.statusText);
+        xhr.onerror = () => reject('Erro de rede');
+        xhr.send();
+      });
+    }
+
+    function carregarDados() {
+      carregarArquivo('dados.txt')
+        .then(data => {
+          document.getElementById('conteudo').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Erro ao carregar:', error);
+        });
+    }
+  </script>
+</body>
+</html>
+

@@ -4,21 +4,14 @@ Este repositório apresenta uma análise comparativa das principais técnicas pa
 
 ## Tecnologias Comparadas
 
-- **XMLHttpRequest (XHR)**:: API mais antiga, baseada em callbacks. É verbosa e difícil de
+- **XMLHttpRequest (XHR)**: API mais antiga, baseada em callbacks. É verbosa e difícil de
 manter, mas compatível com todos os navegadores
-- **Fetch API**: : Moderna, baseada em Promises. Possui sintaxe mais limpa, mas requer
+- **Fetch API**:  Moderna, baseada em Promises. Possui sintaxe mais limpa, mas requer
 AbortController para cancelamento e não envia cookies por padrão.
 - **Promises**:  Introduzidas no ES6, facilitam o encadeamento de ações assíncronas e
 melhoram o tratamento de erros.
 - **Async/Await**: Açúcar sintático para Promises, introduzido no ES8. Permite escrever código
 assíncrono com aparência síncrona, facilitando a leitura e manutenção.
-
-##  Comparação Geral
-
-- **XMLHttpRequest (XHR)**:: : Mais difícil de usar, sintaxe verbosa, mas com suporte amplo.
-- **Fetch API**: :  Mais moderno e simples, com suporte a Promises.
-- **Promises**:   Boa opção intermediária, melhora tratamento de erros e evita 'callback hell'.
-- **Async/Await**: Melhor legibilidade e controle de fluxo, com suporte total a Promises.
 
 ##   Conclusões e Recomendações
 

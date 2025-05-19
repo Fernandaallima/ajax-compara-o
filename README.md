@@ -4,10 +4,29 @@ Este repositório apresenta uma análise comparativa das principais técnicas pa
 
 ## Tecnologias Comparadas
 
-- **XMLHttpRequest (XHR)**: A abordagem tradicional, baseada em callbacks
-- **Fetch API**: A moderna alternativa baseada em Promises
-- **Promises**: O padrão ES6 para operações assíncronas
-- **Async/Await**: Açúcar sintático sobre Promises (ES8)
+- **XMLHttpRequest (XHR)**:: API mais antiga, baseada em callbacks. É verbosa e difícil de
+manter, mas compatível com todos os navegadores
+- **Fetch API**: : Moderna, baseada em Promises. Possui sintaxe mais limpa, mas requer
+AbortController para cancelamento e não envia cookies por padrão.
+- **Promises**:  Introduzidas no ES6, facilitam o encadeamento de ações assíncronas e
+melhoram o tratamento de erros.
+- **Async/Await**: Açúcar sintático para Promises, introduzido no ES8. Permite escrever código
+assíncrono com aparência síncrona, facilitando a leitura e manutenção.
+
+##  Comparação Geral
+
+- **XMLHttpRequest (XHR)**:: : Mais difícil de usar, sintaxe verbosa, mas com suporte amplo.
+- **Fetch API**: :  Mais moderno e simples, com suporte a Promises.
+- **Promises**:   Boa opção intermediária, melhora tratamento de erros e evita 'callback hell'.
+- **Async/Await**: Melhor legibilidade e controle de fluxo, com suporte total a Promises.
+
+##   Conclusões e Recomendações
+
+- **Para projetos modernos**, o uso de Fetch com Async/Await é altamente recomendado.
+- **Em casos de compatibilidade** com navegadores antigos, pode-se utilizar XMLHttpRequest.
+- **Evite usar callbacks aninhados**; prefira Promises ou Async/Await para código mais limpo e sustentável.
+- **Para cancelamento ou controle de progresso**, considere o uso de AbortController com Fetch.
+
 
 ##  Principais Diferenças
 
@@ -18,14 +37,7 @@ Este repositório apresenta uma análise comparativa das principais técnicas pa
 | Cancelamento         | Nativo       | Com AbortController | -        | Com AbortController |
 | Suporte              | Universal    | Moderno      | ES6+         | ES8+         |
 
-##  Exemplos Implementados
 
-O projeto inclui quatro versões da mesma funcionalidade:
-
-1. `xhr-version/` - Implementação com XMLHttpRequest
-2. `fetch-version/` - Implementação com Fetch API
-3. `promises-version/` - Implementação com Promises
-4. `async-await-version/` - Implementação com Async/Await
 
 ##  Como Usar
 

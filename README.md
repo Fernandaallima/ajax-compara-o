@@ -30,18 +30,17 @@ assíncrono com aparência síncrona, facilitando a leitura e manutenção.
 | Cancelamento         | Nativo       | Com AbortController | -        | Com AbortController |
 | Suporte              | Universal    | Moderno      | ES6+         | ES8+         |
 
-
-
-##  Como Usar
-
-```bash
-git clone https://github.com/Fernandaallima/ajax-compara-o.git
-cd ajax-compara-o 
-
-## 📌 Autoria
+ ##  Autoria
 
 Projeto desenvolvido por:
 - Ana Clara
 - Fernanda
 - Gabriel
 - Jasmin
+ 
+##  Como Usar
+
+```bash
+git clone https://github.com/Fernandaallima/ajax-compara-o.git
+cd ajax-compara-o 
+

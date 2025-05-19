@@ -36,4 +36,12 @@ assíncrono com aparência síncrona, facilitando a leitura e manutenção.
 
 ```bash
 git clone https://github.com/Fernandaallima/ajax-compara-o.git
-cd ajax-compara-o
+cd ajax-compara-o 
+
+## 📌 Autoria
+
+Projeto desenvolvido por:
+- Ana Clara
+- Fernanda
+- Gabriel
+- Jasmin
